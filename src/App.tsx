@@ -9,20 +9,17 @@
  */
 
 import React from 'react';
-import {Text, NativeBaseProvider} from 'native-base';
+import {NativeBaseProvider} from 'native-base';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import theme from './theme';
-import {SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context';
+import {Splash} from './container';
 
 const App = () => {
   return (
     <NativeBaseProvider theme={theme}>
       <SafeAreaProvider>
-        <SafeAreaView>
-          <Text bg={'baseTheme'} color={'singletons.white'}>
-            Hello kaisa ha bhai
-          </Text>
-        </SafeAreaView>
+        <Splash />
       </SafeAreaProvider>
     </NativeBaseProvider>
   );
