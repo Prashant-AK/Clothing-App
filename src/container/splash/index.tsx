@@ -1,14 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {StyleSheet} from 'react-native';
-import {Box} from 'native-base';
+import {Center} from 'native-base';
 
-import LogoS from '../../assets/images/logo.svg';
+import Logo from '../../assets/images/logo.svg';
 
-const Splash = () => {
+const Splash = ({navigation}) => {
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate('Public');
+    }, 1000);
+  }, []);
   return (
-    <Box style={styles.container}>
-      <LogoS width={100} height={100} />
-    </Box>
+    <Center style={styles.container}>
+      <Logo width={100} height={120} />
+    </Center>
   );
 };
 
@@ -17,8 +22,5 @@ export default Splash;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });

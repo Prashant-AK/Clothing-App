@@ -10,12 +10,19 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-masked-view/masked-view": "^0.2.9",
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/stack": "^6.3.16",
+    "babel-plugin-module-resolver": "^5.0.0",
     "native-base": "3.4.0",
     "react": "18.2.0",
     "react-native": "0.71.6",
-    "react-native-safe-area-context": "^3.2.0",
+    "react-native-gesture-handler": "^2.9.0",
+    "react-native-safe-area-context": "^3.4.1",
+    "react-native-screens": "^3.20.0",
     "react-native-svg": "^12.1.1",
     "react-native-svg-transformer": "^1.0.0",
+    "react-native-vector-icons": "^9.2.0",
     "tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
@@ -26,6 +33,7 @@
     "@tsconfig/react-native": "^2.0.3",
     "@types/jest": "^29.5.0",
     "@types/react": "^18.0.33",
+    "@types/react-native-vector-icons": "^6.4.13",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.2.1",
     "eslint": "^8.19.0",

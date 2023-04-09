@@ -7,19 +7,22 @@
  *
  * @format
  */
-
 import React from 'react';
+import 'react-native-gesture-handler';
 import {NativeBaseProvider} from 'native-base';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {NavigationContainer} from '@react-navigation/native';
 
-import theme from './theme';
-import {Splash} from './container';
+import theme from './utils/theme';
+import RootNavigator from './appNavigator/RootNavigator';
 
 const App = () => {
   return (
     <NativeBaseProvider theme={theme}>
       <SafeAreaProvider>
-        <Splash />
+        <NavigationContainer>
+          <RootNavigator />
+        </NavigationContainer>
       </SafeAreaProvider>
     </NativeBaseProvider>
   );

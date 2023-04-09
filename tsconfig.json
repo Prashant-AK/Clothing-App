@@ -42,8 +42,10 @@
     "paths": {
       "*": ["src/*"],
       "tests": ["tests/*"],
-      "@components/*": ["src/components/*"],
-      "@container/*": ["src/container/*"]
+      "components": ["src/components/*"],
+      "container": ["src/container/*"],
+      "assets": ["src/assets/*"],
+      "utils": ["src/utils/*"]
     } /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */,
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
